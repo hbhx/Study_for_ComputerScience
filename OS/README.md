@@ -7,7 +7,7 @@
     - 단기 스케줄러
     - 중기 스케줄러
   - [CPU 스케줄러](#cpu-스케줄러)
-    - FCFS(
+    - FCFS
     - SJF
     - SRT
     - Priority Scheduling
@@ -289,7 +289,7 @@
 - 참조횟수가 가장 적은 페이지를 교체
 - Heap으로 구현하여 O(log n) Complexity를 가짐
 
-**Clock Algorithm(LRU)**
+**Clock Algorithm(LRU Approximation Algorithm)**
 - NRU(Not Recently Used)
 - H/W에 의해 조작되며 O/S는 Reference bit를 참고하여 Victim 결정
 - Reference bit = 1 (최근사용), Reference bit = 0 (최근사용X)
