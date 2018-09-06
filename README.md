@@ -18,7 +18,7 @@
 
 - [그 외의 자료](./Etc/README.md)
 
-<br/><br/>
+<br><br>
 
 ## Part 1. 전산 기초
 
