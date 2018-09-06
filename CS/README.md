@@ -23,8 +23,61 @@
   - 부모클래스에서 물려받은 가상 함수를 자식 클래스 내에서 오버라이딩(Overriding) 되어 사용하는 것
 
 
-<br>
+<br><br>
 
 
 # 함수형 프로그래밍이란?
 
+![FM](../assets/images/FP.png)
+
+**함수형 프로그래밍(Functional Programming)이란?**
+
+> Avoids changing State and Mutable data
+
+- 상태와 Data를 변경하는 것을 피하면서 프로그래밍 하는 것
+- 즉, 대입문(Assignment Statements)없이 프로그래밍 하는 것
+
+
+<br>
+
+**순수 함수란?**
+
+- 같은 입력이 주어지면 항상 같은 출력을 반환한다
+- 부작용이 없음
+
+~~~javascript
+var z = 10;
+function add(x,y){
+  return x+y;
+}
+~~~
+
+- 만약 add() 함수가 변수 z를 사용한다면 더이상 순수함수가 아니다
+
+<br>
+
+**FP(Function Programming)의 특징**
+
+- 불변성(Immutability)
+- First-class, higher-order functions
+- Lazy Evaluation
+
+**불변성(Immutability)**
+- FP는 변경 가능한 상태를 최대한 제거하려고 노력한 프로그래밍
+- 함수 내부에 상태가 존재하지 않으며, 함수의 출력은 항상 함수의 입력 값의 영향만 받음
+
+**First-class, higher-order functions**
+
+> 함수형 프로그래밍에서 함수는 일등 시민(first-class citizen) 이다
+
+- 함수가 Argument로 전달될 수 있다
+- Return값이 함수가 될 수 있다
+- 함수를 값처럼 할당하기도, 수정도 할 수 있다
+
+**Lazy Evaluation**
+
+> 📛 지연 연산(Lazy Evaluation)<br>
+\- 어떤 값이 실제로 쓰이기 전까지 그 값의 계산을 최대한 미루는 것<br>
+\- 값을 미리 계산하여 저장하지 않기 때문에 공간을 절약할 수 있고, 그렇기 때문에 프로그램의 성능도 좋아진다
+
+- FP에서는 지연 연산을 지원한다
