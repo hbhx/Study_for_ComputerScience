@@ -75,7 +75,7 @@
 
 ### ✅ 알고리즘 [Link](./Algorithm/README.md)
 
-<br/><br/>
+<br><br>
 
 ## Part 2. Language
 
@@ -87,7 +87,7 @@
   - Promise
   - ES6
 
-<br/><br/>
+<br><br>
 
 ## Part 3. 분야별 정리
 
