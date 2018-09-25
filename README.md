@@ -27,37 +27,17 @@
   - 함수형 프로그래밍이란?
 
 ### ✅ 운영체제 [Link](./OS/README.md)
-  - 프로세스와 스레드의 차이
+  - 프로세스(Process)와 스레드(Thread)의 차이
   - Multi Programming, Multi Processing, Multi Threading의 차이?
-  - 인터럽트
-  - 스케줄러의 종류
-    - 장기 스케줄러
-    - 단기 스케줄러
-    - 중기 스케줄러
+  - 인터럽트(Interrupt)
+  - 스케줄러(Scheduler)의 종류
   - CPU 스케줄러
-    - FCFS
-    - SJF
-    - SRT
-    - Priority Scheduling
-    - RR(Round Robin)
-  - 동기 / 비동기
+  - Sync(동기) vs Async(비동기)
   - 프로세스 동기화
   - 동기화 기법
-    - 세마포어(Semaphore)
-    - 모니터(Monitor)
-    - 뮤텍스(Mutex)
-  - 데드락
-    - Deadlock Prevention
-    - Deadlock Avoidance
-    - Deadlock Detection and Recovery
-    - Deadlock Ignorance
-  - 가상메모리
+  - 데드락(Deadlock)
+  - 가상메모리(Virtual Memory)
   - 페이지 교체 알고리즘
-    - Optimal Algorithm
-    - FIFO(First In First Out)
-    - LRU(Least Recently Used)
-    - LFU(Least Frequency Used)
-    - Clock Algorithm(LRU Approximation Algorithm)
 
 ### ✅ 데이터베이스 [Link](./Database/README.md)
   - 키(Key)의 종류와 개념

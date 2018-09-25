@@ -1,30 +1,30 @@
 # 운영체제
-  - [프로세스와 스레드의 차이](#프로세스와-스레드의-차이)
-  - [Multi Programming, Multi Processing, Multi Threading의 차이](#multi-programming,-multi-processing,-multi-threading의-차이)
-  - [인터럽트](#인터럽트)
-  - [스케줄러의 종류](#스케줄러의-종류)
+  - 프로세스(Process)와 스레드(Thread)의 차이
+  - Multi Programming, Multi Processing, Multi Threading의 차이
+  - 인터럽트(Interrupt)
+  - 스케줄러(Scheduler)의 종류
     - 장기 스케줄러
     - 단기 스케줄러
     - 중기 스케줄러
-  - [CPU 스케줄러](#cpu-스케줄러)
+  - CPU 스케줄러
     - FCFS
     - SJF
     - SRT
     - Priority Scheduling
     - RR(Round Robin)
-  - [동기 / 비동기](#동기-/-비동기)
-  - [프로세스 동기화](#프로세스-동기화)
-  - [동기화 기법](#동기화-기법)
+  - Sync(동기) vs Async(비동기)
+  - 프로세스 동기화
+  - 동기화 기법
     - 세마포어(Semaphore)
     - 모니터(Monitor)
     - 뮤텍스(Mutex)
-  - [데드락](#데드락)
+  - 데드락(Deadlock)
     - Deadlock Prevention
     - Deadlock Avoidance
     - Deadlock Detection and Recovery
     - Deadlock Ignorance
-  - [가상메모리](#가상메모리)
-  - [페이지 교체 알고리즘](#페이지-교체-알고리즘)
+  - 가상메모리(Virtual Memory)
+  - 페이지 교체 알고리즘
     - Optimal Algorithm
     - FIFO(First In First Out)
     - LRU(Least Recently Used)
@@ -33,7 +33,7 @@
 
 <br/><br/>
 
-# 프로세스와 스레드의 차이
+# 프로세스(Process)와 스레드(Thread)의 차이
 
 **프로세스(Process)**
 >Process is a program in execution
@@ -68,7 +68,7 @@
 
 <br>
 
-# 인터럽트
+# 인터럽트(Interrupt)
 
 > 프로그램을 수행하는 도중에 예기치 않은 상황이 발생<br>
   Register와 PC(Program Counter)를 저장한 후, CPU 제어권을 인터럽트 처리 루틴에 넘겨줌
@@ -88,7 +88,7 @@
 
 <br>
 
-# 스케줄러의 종류
+# 스케줄러(Scheduler)의 종류
 
 **문맥교환 (Context Switch)**
 - CPU를 한 프로세스에서 다른 프로세스로 넘겨주는 과정
@@ -141,9 +141,9 @@
 
 <br>
 
-# 동기 / 비동기
+# Sync(동기) vs Async(비동기)
 
-**Sync(동기) vs Async(비동기)**
+**동기 vs 비동기**
 
 - 메소드를 실행시킴과 동시에 반환값이 기대되는 경우를 **동기** 라고 표현하고<br>
 그렇지 않은 경우에 대해서 **비동기** 라고 한다.
@@ -219,9 +219,9 @@
 
 <br>
 
-# 데드락
+# 데드락(Deadlock)
 
-**데드락(Deadlock) 발생 조건**
+**데드락 발생 조건**
 - Mutual Exclusion(상호 배제)
 - No Preemption(비선점)
 - Hold and Wait(점유 대기)
@@ -254,9 +254,9 @@
 
 <br>
 
-# 가상메모리
+# 가상메모리(Virtual Memory)
 
-**가상메모리(Virtual Memory)의 배경**
+**가상메모리의 배경**
 - 실행되는 코드의 전부를 메모리에 존재시켜야 했고, 메모리 용량보다 큰 프로그램은 실행시킬 수 없었다
 - **프로그램의 일부분만 메모리에 올릴 수 없을까?** 라는 생각을 가지고 만들어 진게 가상메모리
 
