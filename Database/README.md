@@ -8,7 +8,6 @@
   - 조인(Join)
   - 인덱스(Index)
   - NoSQL과 RDBMS
-  - Data Independency
 
   <br><br>
 
@@ -158,5 +157,3 @@
 \- 트랜잭션 간의 실행 순서를 미리 결정함
 <br>
 \# 교착상태(Deadlock)를 예방
-
-<br>

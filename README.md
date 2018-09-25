@@ -69,7 +69,6 @@
   - 조인(Join)
   - 인덱스(Index)
   - NoSQL과 RDBMS
-  - Data Independency
 
 ### ✅ Design Pattern [Link](./DesignPattern/README.md)
   - Singleton
