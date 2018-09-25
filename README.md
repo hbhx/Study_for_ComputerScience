@@ -61,14 +61,15 @@
 
 ### ✅ 데이터베이스 [Link](./Database/README.md)
   - 키(Key)의 종류와 개념
-  - 정규화
-  - 데이터 이상
+  - 데이터베이스 무결성(Integrity)
+  - 데이터 이상(Anomaly)
+  - 정규화(Normalization)
   - 트랜잭션(Transaction)과 ACID
-  - 데이터베이스 무결성
-  - NoSQL과 RDBMS
-  - Data Independency
+  - 병행제어(Concurrency Control)
   - 조인(Join)
   - 인덱스(Index)
+  - NoSQL과 RDBMS
+  - Data Independency
 
 ### ✅ Design Pattern [Link](./DesignPattern/README.md)
   - Singleton
