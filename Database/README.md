@@ -1,9 +1,28 @@
 # Database
   - 키(Key)의 종류와 개념
+    - 슈퍼키(Super Key)
+    - 후보키(Candidate Key)
+    - 기본키(Primary Key)
+    - 대체키(Alternate Key)
+    - 외래키(Foreign Key)
   - 데이터베이스 무결성(Integrity)
+    - 개체 무결성
+    - 참조 무결성
+    - 도메인 무결성
   - 데이터 이상(Anomaly)
+    - 삽입 이상
+    - 삭제 이상
+    - 갱신 이상
   - 정규화(Normalization)
+    - 제 1정규형
+    - 제 2정규형
+    - 제 3정규형
+    - BCNF
   - 트랜잭션(Transaction)과 ACID
+    - Atomiticy
+    - Consistency
+    - Isolation
+    - Durability
   - 병행제어(Concurrency Control)
   - 조인(Join)
   - 인덱스(Index)
@@ -44,6 +63,8 @@
 
 > 데이터의 무결성은 데이터의 정확성, 일관성, 유효성이 유지되는 것을 말한다.
 
+<br>
+
 **개체 무결성(Entity Integrity)**
 - 모든 릴레이션은 기본키로 선택된 속성을 가져야한다
 - 기본키를 구성하는 속성은 NULL값이나 중복값을 가질 수 없다
@@ -60,6 +81,8 @@
 # 데이터 이상(Data Anomaly)
 
 > 테이블에서 일부 속성들의 종속으로 인해 데이터들의 중복이 발생하여 조작할 수 없는 현상
+
+<br>
 
 **삽입 이상**
 - 테이블에 데이터를 삽일할 때, 원하지 않는 값들로 인해 생기는 이상
@@ -80,6 +103,8 @@
 > 테이블을 무손실 분해하는 과정<br>
   가능한 한 중복을 제거하여 이상(Anomaly) 발생가능성을 줄이는 것이 목적
 
+<br>
+
 **제 1정규형**
 - 모든 속성의 도메인이 원자값만으로 되어있는 정규형
 > 도메인(Domain) : 하나의 속성이 갖는 값들의 집합
@@ -94,13 +119,13 @@
 
 **제 3정규형**
 - 기본키가 아닌 모든 속성이 기본키에 대해 이행적 함수 종속을 만족하지 않는 정규형
-> ✅ 이행적 함수 종속<br>
+> ✅ 이행 함수 종속<br>
   \- 세가지 종속간의 종속이 'A→B', 'B→C'경우 'A→C'가 성립되는 종속
 
 **BCNF**
 - 모든 결정자가 후보키인 정규형
 
-![normalization](../assets/images/normalization.png)
+![normalization](../assets/images/Normalization.png)
 
 <br>
 
@@ -131,7 +156,7 @@
 - Durability(영속성)
   - 트랜잭션 작업이 완료됐다면, 결과는 영구적으로 반영되어야함
 
-![normalization](../assets/images/Transaction.png)
+![Transaction](../assets/images/Transaction.png)
 
 <br>
 
@@ -139,21 +164,23 @@
 
 > 동시에 여러 트랜잭션을 병행 수행할 때, 트랜잭션들이 일관성을 파괴하지 않도록 제어하는 기술
 
+<br>
+
 **LOCKING 기법**
 - 데이터베이스 관리에서 하나의 트랜잭션에서 LOCK을 걸어 사용되는 데이터를 다른 트랜잭션이 접근하지 못하게 하는 것
 
+**Deadlock(교착상태)**
+- 트랜잭션들이 서로의 자원을 획득하려고 대기함으로, 무한대기 상태에 빠지는 상태
+
+<br>
+
 > ✅ 2단계 Locking 기법<br>
-\- 트랜잭션 스케줄의 직렬성을 보장하는 기법
-<br>
-\- 확장(Growing) 단계 : Lock을 획득하는 단계, 가지고 있는 Lock 해지X
-\- 수축(Shrinking) 단계 : Lock을 해제하는 단계, 새로운 Lock 획득X
-<br>
-\# 교착상태(Deadlock)를 예방하지는 못함
-<br>
-📛 교착상태(Deadlock) : 트랜잭션들이 서로의 자원을 획득하려고 대기함으로, 무한대기 상태에 빠지는 상태
+: 트랜잭션 스케줄의 직렬성을 보장하는 기법<br><br>
+\- 확장(Growing) 단계 : Lock을 획득하는 단계, 가지고 있는 Lock 해지X<br>
+\- 수축(Shrinking) 단계 : Lock을 해제하는 단계, 새로운 Lock 획득X<br><br>
+\# 교착상태(Deadlock)를 예방하지는 못함<br>
 
 > ✅ 타임스탬프 순서 기법<br>
-\- 시스템이 각 트랜잭션을 실행할 때, 타임스탬프를 부여
-\- 트랜잭션 간의 실행 순서를 미리 결정함
-<br>
+\- 시스템이 각 트랜잭션을 실행할 때, 타임스탬프를 부여<br>
+\- 트랜잭션 간의 실행 순서를 미리 결정함<br><br>
 \# 교착상태(Deadlock)를 예방
