@@ -7,6 +7,7 @@
   - [운영체제](./OS/README.md)
   - [데이터베이스](./Database/README.md)
   - [디자인패턴](./DesignPattern/README.md)
+  - [자료구조](./DataStructure/README.md)
   - [알고리즘](./Algorithm/README.md)
 
 - Part 2. Language
@@ -50,8 +51,17 @@
   - 인덱스(Index)
   - NoSQL과 RDBMS
 
-### ✅ Design Pattern [Link](./DesignPattern/README.md)
+### ✅ 디자인 패턴 [Link](./DesignPattern/README.md)
   - Singleton
+
+### ✅ 자료구조 [Link](./DataStructure/README.md)
+  - Array / LinkedList
+  - Stack / Queue
+  - Tree
+  - Binary Heap
+  - Red-Black Tree
+  - Hash Table
+  - Graph
 
 ### ✅ 알고리즘 [Link](./Algorithm/README.md)
 
