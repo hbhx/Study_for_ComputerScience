@@ -55,7 +55,7 @@
   - Singleton
 
 ### ✅ 자료구조 [Link](./DataStructure/README.md)
-  - Array / LinkedList
+  - Array / Linked List
   - Stack / Queue
   - Tree
   - Binary Heap

@@ -1,5 +1,5 @@
 # Data Structure
-  - Array / LinkedList
+  - Array / Linked List
   - Stack / Queue
   - Tree
   - Binary Heap
